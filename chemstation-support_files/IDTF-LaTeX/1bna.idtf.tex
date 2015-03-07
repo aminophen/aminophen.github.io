@@ -1,0 +1,354 @@
+% Created by: Jmol 14.2.12_2015.02.11  2015-02-11 06:00
+% Creation date: 金, 27 2 2015 18:47:09 +0900
+% File created: /Users/npjilab/Desktop/1bna.idtf (564903 bytes)
+
+
+\documentclass[12pt,papersize,dvipdfmx]{jsarticle}
+\usepackage{hyperref}
+\usepackage{bxexpl3ptex}
+\usepackage{media9}
+\usepackage{verbatim}
+\pagestyle{empty}
+\begin{document}
+これは B-DNA の 3D モデルです。PDF ファイルの作者は「アセトアミノフェン」です。
+\begin{figure}[h]
+\centering
+    \addmediapath{./} % here you can set the path where is been saved the u3d file
+    \includemedia[
+      label=1bna,
+      width=0.5\textwidth,
+      height=0.5\textheight,
+      activate=pageopen,
+      deactivate=pageclose,
+      3Dnavpane=false,
+      3Dmenu,
+      3Droo=173.64172,
+      3Dcoo= 0.0 0.0 0.0,
+      3Dc2c=0.0 0.0 1.0,
+      3Daac=16.260204,
+      3Droll=0.0,
+      3Dbg=0 0 0, % to set the background color for 3D vwr; white = 1 1 1; so, you need to do the proportion: '255:1=[RGB]:x'
+      transparent=false,
+      3Dlights=Headlamp,
+      3Drender=Solid,
+      3Dpartsattrs=restore,
+    ]{}{idtf-1bna.u3d}
+%  \\
+%\movieref[3Dcalculate]{1bna}{Click here!}
+\caption{B-DNA (PDB: 1BNA)}
+\end{figure}
+\end{document}
+\begin{comment}
+/****** Jmol Embedded Script **** 
+# Jmol state version 14.2.12_2015.02.11  2015-02-11 06:00;
+
+function _setWindowState() {
+# preferredWidthHeight -1 -1;
+# width -1;
+# height -1;
+  stateVersion = 1402012;
+  background [x000000];
+  axis1Color = "[xff0000]";
+  axis2Color = "[x008000]";
+  axis3Color = "[x0000ff]";
+  set ambientPercent 45;
+  set diffusePercent 84;
+  set specular true;
+  set specularPercent 22;
+  set specularPower 40;
+  set specularExponent 6;
+  set celShading false;
+  set celShadingPower 10;
+  set zShadePower 3;
+}
+
+function _setFileState() {
+
+  set allowEmbeddedScripts false;
+  set appendNew true;
+  set appletProxy "";
+  set applySymmetryToBonds false;
+  set autoBond true;
+  set bondRadiusMilliAngstroms 150;
+  set bondTolerance 0.45;
+  set defaultLattice {0.0 0.0 0.0};
+  set defaultLoadFilter "";
+  set defaultLoadScript "";
+  set defaultStructureDssp true;
+  set defaultVDW Auto;
+  set forceAutoBond false;
+  #set defaultDirectory "/Users/npjilab/Desktop/jmol-14.2.12";
+  #set loadFormat "http://www.rcsb.org/pdb/files/%FILE.pdb.gz";
+  #set loadLigandFormat "http://www.rcsb.org/pdb/files/ligand/%FILE.cif";
+  #set smilesUrlFormat "http://cactus.nci.nih.gov/chemical/structure/%FILE/file?format=sdf&get3d=True";
+  #set nihResolverFormat "http://cactus.nci.nih.gov/chemical/structure/%FILE";
+  #set pubChemFormat "http://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/%FILE/SDF?record_type=3d";
+  #set edsUrlFormat "http://eds.bmc.uu.se/eds/dfs/%LC13/%LCFILE/%LCFILE.omap";
+  #set edsUrlFormatDiff "http://eds.bmc.uu.se/eds/dfs/%LC13/%LCFILE/%LCFILE_diff.omap";
+  #set edsUrlCutoff "http://eds.bmc.uu.se/eds/dfs/%LC13/%LCFILE/%LCFILE.sfdat";
+  set bondingVersion 0;
+  set legacyAutoBonding false;
+  set legacyHAddition false;
+  set legacyJavaFloat false;
+  set minBondDistance 0.4;
+  set minimizationCriterion  0.001;
+  set minimizationSteps  100;
+  set pdbAddHydrogens false;
+  set pdbGetHeader false;
+  set pdbSequential false;
+  set percentVdwAtom 23;
+  set smallMoleculeMaxAtoms 40000;
+  set smartAromatic true;
+  load /*file*/"./1BNA.pdb";
+
+}
+
+function _setParameterState() {
+
+   set defaultanglelabel "%VALUE %UNITS";
+   set defaultcolorscheme "jmol";
+   set defaultdistancelabel "%VALUE %UNITS";
+   set defaultdrawarrowscale 0.5;
+   set defaultlabelpdb "%m%r";
+   set defaultlabelxyz "%a";
+   set defaultlattice "{0.0 0.0 0.0}";
+   set defaultloadfilter "";
+   set defaultloadscript "";
+   set defaulttorsionlabel "%VALUE %UNITS";
+   set defaulttranslucent 0.5;
+   set defaultvdw "Auto";
+  set allowembeddedscripts true;
+  set allowmoveatoms false;
+  set allowrotateselected false;
+  set animationmode "once";
+  set appletproxy "";
+  set applysymmetrytobonds false;
+  set atomtypes "";
+  set autobond true;
+  set autofps false;
+  set axes window;
+  set axesmode 0;
+  set axesscale 2.0;
+  set backbonesteps false;
+  set bondmodeor false;
+  set bondradiusmilliangstroms 150;
+  set bondtolerance 0.45;
+  set cartoonbaseedges false;
+  set cartoonfancy false;
+  set cartoonladders false;
+  set cartoonrockets false;
+  set cartoonsfancy false;
+  set chaincasesensitive false;
+  set dataseparator "~~~";
+  set defaultstructuredssp true;
+  set delaymaximumms 0;
+  set dipolescale 1.0;
+  set disablepopupmenu false;
+  set displaycellparameters true;
+  set dotdensity 3;
+  set dotscale 1;
+  set dotsselectedonly false;
+  set dotsurface true;
+  set dragselected false;
+  set drawfontsize 14.0;
+  set drawhover false;
+  set dsspcalculatehydrogenalways true;
+  set edsurlformatdiff "http://eds.bmc.uu.se/eds/dfs/%LC13/%LCFILE/%LCFILE_diff.omap";
+  set ellipsoidarcs false;
+  set ellipsoidarrows false;
+  set ellipsoidaxes false;
+  set ellipsoidaxisdiameter 0.02;
+  set ellipsoidball true;
+  set ellipsoiddotcount 200;
+  set ellipsoiddots false;
+  set ellipsoidfill false;
+  set energyunits "kJ";
+  set forceautobond false;
+  set gestureswipefactor 1.0;
+  set greyscalerendering false;
+  set hbondsangleminimum 90.0;
+  set hbondsbackbone false;
+  set hbondsdistancemaximum 3.25;
+  set hbondsrasmol true;
+  set hbondssolid false;
+  set helixstep 1;
+  set helppath "http://chemapps.stolaf.edu/jmol/docs/index.htm";
+  set hermitelevel 0;
+  set hidenameinpopup false;
+  set hidenavigationpoint false;
+  set highresolution false;
+  set historylevel 0;
+  set hoverdelay 0.5;
+  set imagestate true;
+  set iskiosk false;
+  set isosurfacekey false;
+  set isosurfacepropertysmoothing true;
+  set isosurfacepropertysmoothingpower 7;
+  set justifymeasurements false;
+  set loadatomdatatolerance 0.01;
+  set measureallmodels false;
+  set measurementlabels true;
+  set meshscale 1;
+  set messagestylechime false;
+  set minbonddistance 0.4;
+  set minimizationcriterion 0.001;
+  set minimizationrefresh true;
+  set minimizationsilent false;
+  set minimizationsteps 100;
+  set minpixelselradius 6;
+  set modulationscale 1.0;
+  set monitorenergy false;
+  set multiplebondradiusfactor 0.0;
+  set multiplebondspacing -1.0;
+  set navigationperiodic false;
+  set navigationspeed 5.0;
+  set nmrpredictformat "http://www.nmrdb.org/service/predictor?POST?molfile=";
+  set nmrurlformat "http://www.nmrdb.org/new_predictor?POST?molfile=";
+  set partialdots false;
+  set particleradius 20.0;
+  set pdbaddhydrogens false;
+  set pdbgetheader false;
+  set pdbsequential false;
+  set percentvdwatom 23;
+  set pickingspinrate 10;
+  set pointgroupdistancetolerance 0.2;
+  set pointgrouplineartolerance 8.0;
+  set propertyatomnumbercolumncount 0;
+  set propertyatomnumberfield 0;
+  set propertycolorscheme "roygb";
+  set propertydatacolumncount 0;
+  set propertydatafield 0;
+  set quaternionframe "p";
+  set rangeselected false;
+  set ribbonaspectratio 16;
+  set ribbonborder false;
+  set rocketbarrels false;
+  set saveproteinstructurestate true;
+  set selectallmodels true;
+  set selecthetero true;
+  set selecthydrogen true;
+  set sheetsmoothing 1.0;
+  set showhiddenselectionhalos false;
+  set showhydrogens true;
+  set showkeystrokes true;
+  set showmeasurements true;
+  set showmodulationvectors false;
+  set showmultiplebonds true;
+  set shownavigationpointalways false;
+  set showunitcelldetails true;
+  set slabbyatom false;
+  set slabbymolecule false;
+  set smallmoleculemaxatoms 40000;
+  set smartaromatic true;
+  set solventprobe false;
+  set solventproberadius 1.2;
+  set ssbondsbackbone false;
+  set starwidth 0.05;
+  set stereodegrees -5.0;
+  set strandcountformeshribbon 7;
+  set strandcountforstrands 5;
+  set strutdefaultradius 0.3;
+  set strutlengthmaximum 7.0;
+  set strutsmultiple false;
+  set strutspacing 6;
+  set testflag1 false;
+  set testflag2 false;
+  set testflag3 false;
+  set testflag4 false;
+  set tracealpha true;
+  set translucent true;
+  set twistedsheets false;
+  set useminimizationthread true;
+  set usenumberlocalization true;
+  set vectorscale 1.0;
+  set vectorscentered false;
+  set vectorsymmetry false;
+  set vibrationscale 0.5;
+  set waitformoveto true;
+  set wireframerotation false;
+  set zdepth 0;
+  set zoomheight false;
+  set zoomlarge true;
+  set zslab 50;
+
+}
+
+function _setModelState() {
+
+  select ({16 38 57 79 100 121 141 161 180 202 221 259 281 300 322 343 364 384 404 423 445 464});
+  Spacefill 0.4155;
+  select ({8:15 27:37 49:56 68:78 90:99 111:120 132:140 152:160 172:179 191:201 213:220 232:242 251:258 270:280 292:299 311:321 333:342 354:363 375:383 395:403 415:422 434:444 456:463 475:565});
+  Spacefill 0.0;
+  select ({121:160 364:403});
+  color atoms opaque [xffd700];
+  select ({79:120 322:363});
+  color atoms opaque [xff7f50];
+  select ({0:15 38:56 161:179 202:220 243:258 281:299 404:422 445:463});
+  color atoms opaque [x6495ed];
+  select ({1 2 4 6 7 20 21 23 25 26 42 43 45 47 48 61 62 64 66 67 83 84 86 88 89 104 105 107 109 110 125 126 128 130 131 145 146 148 150 151 165 166 168 170 171 184 185 187 189 190 206 207 209 211 212 225 226 228 230 231 244 245 247 249 250 263 264 266 268 269 285 286 288 290 291 304 305 307 309 310 326 327 329 331 332 347 348 350 352 353 368 369 371 373 374 388 389 391 393 394 408 409 411 413 414 427 428 430 432 433 449 450 452 454 455 468 469 471 473 474});
+  Spacefill 0.39;
+  select ({16:37 57:78 180:201 221:242 259:280 300:321 423:444 464:485});
+  color atoms opaque [x90ee90];
+  select ({0 3 5 17:19 22 24 39:41 44 46 58:60 63 65 80:82 85 87 101:103 106 108 122:124 127 129 142:144 147 149 162:164 167 169 181:183 186 188 203:205 208 210 222:224 227 229 243 246 248 260:262 265 267 282:284 287 289 301:303 306 308 323:325 328 330 344:346 349 351 365:367 370 372 385:387 390 392 405:407 410 412 424:426 429 431 446:448 451 453 465:467 470 472});
+  Spacefill 0.34;
+  select BONDS ({0:8 18:29 43:54 64:75 89:98 100 112:122 124 136:147 158:169 180:191 201:213 227:238 248:258 272:280 290:301 315:326 336:347 361:372 385:394 396 408:419 430:441 452:463 473:484 498:510 520:530});
+  wireframe 0.15;
+  select BONDS ({544});
+  wireframe 0.3;
+  select BONDS ({9:17 30:42 55:63 76:88 99 101:111 123 125:135 148:157 170:179 192:200 214:226 239:247 259:271 281:289 302:314 327:335 348:360 373:384 395 397:407 420:429 442:451 464:472 485:497 511:519 531:543});
+  wireframe 0.0;
+
+
+  select ({0:485});
+  Cartoon on;
+
+  hover "%U";
+
+  frank on;
+  font frank 16.0 SansSerif Plain;
+  select *;
+  set fontScaling false;
+
+}
+
+function _setPerspectiveState() {
+  set perspectiveModel 11;
+  set scaleAngstromsPerInch 0.0;
+  set perspectiveDepth true;
+  set visualRange 5.0;
+  set cameraDepth 3.0;
+  boundbox corners {2.6219997 5.7509995 -11.401001} {28.496 34.195 31.084} # volume = 31267.264;
+  center {15.559 19.973 9.841499};
+   moveto -1.0 {0 0 1 0} 100.0 0.0 0.0 {15.559 19.973 9.841499} 24.805962 {0 0 0} 0 0 0 3.0 0.0 0.0;
+  save orientation "default";
+  moveto 0.0 { -294 832 471 42.36} 100.0 0.0 0.0 {15.559 19.973 9.841499} 24.805962 {0 0 0} 0 0 0 3.0 0.0 0.0;;
+  slab 100;depth 0;
+  set slabRange 0.0;
+  set spinX 0; set spinY 30; set spinZ 0; set spinFps 30;  set navX 0; set navY 0; set navZ 0; set navFps 10;
+}
+
+function _setSelectionState() {
+  hide ({486:565});
+  select ({8:15 27:37 49:56 68:78 90:99 111:120 132:140 152:160 172:179 191:201 213:220 232:242 251:258 270:280 292:299 311:321 333:342 354:363 375:383 395:403 415:422 434:444 456:463 475:485});
+  set hideNotSelected false;
+}
+
+function _setState() {
+  initialize;
+  set refreshing false;
+  _setWindowState;
+  _setFileState;
+  _setParameterState;
+  _setModelState;
+  _setPerspectiveState;
+  _setSelectionState;
+  set refreshing true;
+  set antialiasDisplay false;
+  set antialiasTranslucent true;
+  set antialiasImages true;
+}
+
+_setState;
+
+**/
+\end{comment}
