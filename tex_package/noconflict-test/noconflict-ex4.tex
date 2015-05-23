@@ -1,0 +1,63 @@
+\documentclass{jsarticle}
+\usepackage{noconflict}
+\usepackage{testingconflictA}
+\prefix{A}
+\save*{testingconflictX,testingconflictY,testingconflictZ}
+\usepackage{testingconflictB}
+\prefix{B}
+\save*{testingconflictX,testingconflictY,testingconflictZ}
+\usepackage{testingconflictC}
+\prefix{C}
+\save*{testingconflictX,testingconflictY,testingconflictZ}
+\title{\textsf{noconflict} パッケージを使ってみる4}
+\author{アセトアミノフェン}
+\begin{document}
+\maketitle
+
+\testingconflictX{test}
+\testingconflictY{hoge}
+\testingconflictZ{fuga}
+
+\AtestingconflictX{てすと}
+\AtestingconflictY{ほげ}
+\AtestingconflictZ{ふが}
+
+\BtestingconflictX{テスト}
+\BtestingconflictY{ホゲ}
+\BtestingconflictZ{フガ}
+
+\CtestingconflictX{foo}
+\CtestingconflictY{bar}
+\CtestingconflictZ{baz}
+
+ここまでは
+\begin{itemize}
+\item 元のコマンド名：空
+\item Aが付いたコマンド名：パッケージAのもの
+\item Bが付いたコマンド名：パッケージBのもの
+\item Cが付いたコマンド名：パッケージCのもの
+\end{itemize}
+となっている。しかし、ここでBのマクロをもとのコマンド名に復帰させてみる。
+
+\restore{B}
+
+\testingconflictX{test}
+\testingconflictY{hoge}
+\testingconflictZ{fuga}
+
+\AtestingconflictX{てすと}
+\AtestingconflictY{ほげ}
+\AtestingconflictZ{ふが}
+
+\BtestingconflictX{テスト}
+\BtestingconflictY{ホゲ}
+\BtestingconflictZ{フガ}
+
+\CtestingconflictX{foo}
+\CtestingconflictY{bar}
+\CtestingconflictZ{baz}
+
+このように、元のコマンド名からの出力が先ほどまでの空の状態ではなくBのマクロに変化した。
+この場合、新たに定義したBが付いたコマンドも失われない。
+
+\end{document}

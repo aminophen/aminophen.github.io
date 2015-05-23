@@ -1,0 +1,27 @@
+\documentclass{jsarticle}
+\usepackage{noconflict}
+\usepackage{testingconflictA}
+\prefix{A}
+\save*{testingconflictX,testingconflictY,testingconflictZ}
+\usepackage{testingconflictB}
+\prefix{B}
+\save*{testingconflictX,testingconflictY,testingconflictZ}
+\usepackage{testingconflictC}
+\title{\textsf{noconflict} パッケージを使ってみる3}
+\author{アセトアミノフェン}
+\begin{document}
+\maketitle
+
+\testingconflictX{test}
+\testingconflictY{hoge}
+\testingconflictZ{fuga}
+
+\AtestingconflictX{てすと}
+\AtestingconflictY{ほげ}
+\AtestingconflictZ{ふが}
+
+\BtestingconflictX{テスト}
+\BtestingconflictY{ホゲ}
+\BtestingconflictZ{フガ}
+
+\end{document}

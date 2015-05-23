@@ -1,0 +1,52 @@
+\documentclass{jsarticle}
+\usepackage{macroswap}
+\newcommand{\myfirst}{First}
+\newcommand{\myend}{End}
+\title{\textsf{macroswap} パッケージを使ってみる}
+\author{アセトアミノフェン}
+\begin{document}
+\maketitle
+
+簡単な例として、以下のように定義します：
+\begin{verbatim}
+\newcommand{\myfirst}{First}
+\newcommand{\myend}{End}
+\end{verbatim}
+すなわち \verb|\myfirst| で First が出力され、\verb|\myend| で End が出力されます。
+
+試しに一度出力してみます：\myfirst \myend
+（ここでは FirstEnd と出ているはずです）
+
+
+ここで \textsf{macroswap} パッケージの \verb|\macroswap| や \verb|\gmacroswap| を使います。
+このコマンドは引数を2つとり、それぞれの引数にはマクロ名を指定します。
+\verb|\macroswap| や \verb|\gmacroswap| が記述されると、以降で2つのマクロの名称が逆転します。
+\begin{itemize}
+\item \verb|\macroswap| は \verb|\begingroup| と \verb|\endgroup| の間に書かれていれば、そのグループ外では無効
+\item \verb|\gmacroswap| は以降のマクロ名をグローバルに変更
+\end{itemize}
+という違いがあります。
+
+
+まずは \verb|\macroswap| を試します：
+\begingroup
+\macroswap{myfirst}{myend}
+\myfirst \myend
+（ここでは EndFirst と出ているはずです）
+\endgroup
+
+グループの外では FirstEnd に戻っているはずです：
+\myfirst \myend
+
+
+次に \verb|\gmacroswap| を試します：
+\begingroup
+\gmacroswap{myfirst}{myend}
+\myfirst \myend
+（ここでは EndFirst と出ているはずです）
+\endgroup
+
+グループの外でも逆転した EndFirst のままになっているはずです：
+\myfirst \myend
+
+\end{document}

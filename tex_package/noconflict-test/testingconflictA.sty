@@ -1,0 +1,15 @@
+%%
+%% This is file `testingconflictA.sty' for testing `noconflict.sty'.
+%% 
+\NeedsTeXFormat{LaTeX2e}
+  [1994/12/01]% LaTeX date must be December 1994 or later
+\ProvidesPackage{testingconflictA}[2015/01/11 v1.0 Macro name conflict test A]
+
+\newcommand{\testingconflictX}[1]{(#1AX)}
+\newcommand{\testingconflictY}[1]{(#1AY)}
+\newcommand{\testingconflictZ}[1]{(#1AZ)}
+
+\endinput
+
+%%
+%% End of file `testingconflictA.sty'.

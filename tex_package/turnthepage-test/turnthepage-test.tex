@@ -1,0 +1,47 @@
+\documentclass{jsarticle}
+\usepackage[english]{turnthepage}
+\renewcommand{\turnthepage}{ページをめくりなさい。}
+\title{\textsf{turnthepage} パッケージを使ってみる}
+\author{アセトアミノフェン}
+\begin{document}
+\maketitle
+
+CTAN の \textsf{turnthepage} パッケージの利用例です。
+
+機能は、見開きで右にあたる奇数ページ下部（最後のページを除く）に
+\begin{quote}
+\textit{Turn the page.}
+\end{quote}
+というメッセージを表示するだけです。
+
+ただし、英語・フランス語・オランダ語・ドイツ語しかサポートしていないため、この例では日本語化のため
+\begin{verbatim}
+\renewcommand{\turnthepage}{ページをめくりなさい。}
+\end{verbatim}
+という再定義を与えています。
+
+\clearpage
+
+次のページになりました。
+
+このようなパッケージは、例えば
+\begin{itemize}
+\item 試験問題で各ページに空白部分を設けた場合に、受験者に次のページにも問題があることを教える
+\end{itemize}
+という目的で用いることができます。
+
+\clearpage
+
+例えば、ここに問題文があるとします。
+
+\clearpage
+
+先ほどのページに余白が多いため、「ページをめくりなさい。」というメッセージがなければこのページに問題文があることに気づきにくくなってしまいます。
+
+\clearpage
+
+最後のページになりました。ここにはメッセージが出ないはずです。
+
+注意：タイプセットは最低2回必要です。1回だけではページ数を取得できていないため、メッセージを出力すべきページを判断できていないためだと思われます。
+
+\end{document}

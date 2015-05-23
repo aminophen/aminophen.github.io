@@ -1,0 +1,10 @@
+\RequirePackage{letltxmacro}
+\RequirePackage{xstring}
+\LetLtxMacro\latexRequirePackage\RequirePackage
+\renewcommand\RequirePackage[2][]{\IfStrEq{#2}{txfonts}{}{\latexRequirePackage[#1]{#2}}}
+\documentclass{jserror}
+\usepackage{amsmath}
+\latexRequirePackage{txfonts}
+\begin{document}
+数式の例：$\iint dx dy, \iiint dx dy dz$
+\end{document}
