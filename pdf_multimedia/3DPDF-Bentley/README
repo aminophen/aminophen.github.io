@@ -1,0 +1,15 @@
+The PDF file with an interactive 3D model ("100d-spacefill.pdf") was generated
+using Bentley View V8i.
+
+******************************
+Information for Making
+
+Requirements:
+- Jmol
+- Bentley View V8i
+
+1. You have to get "100d.pdb" from Protein Data Bank:
+  http://www.rcsb.org/pdb/explore/explore.do?structureId=100d
+2. Export "100d-spacefill.obj" and "100d-spacefill.mtl" using Jmol.
+3. Print to 3D PDF using Bentley View V8i.
+******************************

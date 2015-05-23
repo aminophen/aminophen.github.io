@@ -1,0 +1,12 @@
+The PDF file with an interactive 3D model ("3d-jmol_js-media9.pdf") was
+generated using LaTeX.
+
+******************************
+These files are an experiment for typesetting a LaTeX source which contains
+media9 package with "platex + dvipdfmx" scheme.
+- 100d-test1.tex            : error
+- 100d-test2.tex            : error
+- 100d-test3.tex            : error
+- 100d-test4.tex            : success!
+- 100d-test-bxexpl3ptex.tex : smart solution!
+******************************

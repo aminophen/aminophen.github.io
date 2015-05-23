@@ -1,0 +1,22 @@
+The PDF file with an animation ("animate_demo_js.pdf") was generated
+using LaTeX.
+
+******************************
+Information for Typesetting
+
+Requirements:
+- TeX Live or W32TeX
+- Gnuplot
+- ImageMagick
+
+1. In the Gnuplot terminal:
+ n = 0
+ set terminal gif animate optimize size 648, 432
+ set output "wave.gif"
+ load "wave.plt"
+2. Convert each frame to individual EPS files using ImageMagick:
+ convert wave.gif -coalesce wave_%03d.eps
+3. And typeset:
+ platex animate_demo_js.tex (at least 2 times)
+ dvipdfmx animate_demo_js.dvi
+******************************

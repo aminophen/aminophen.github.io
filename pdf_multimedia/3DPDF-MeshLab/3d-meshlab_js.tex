@@ -1,0 +1,23 @@
+% platex -> dvipdfmx で可能
+\documentclass{jsarticle}
+\let\ifdraft\relax % 後で movie15 パッケージが ifdraft.sty が読み込むことへの対策
+\usepackage[dvipdfmx]{hyperref}
+\usepackage[dvipdfmx,3D]{movie15_dvipdfmx}
+\title{動く3Dモデルのmovie15\_dvipdfmxによる取り込み}
+\author{Acetaminophen}
+\begin{document}
+\maketitle
+
+これは\texttt{100d.pdb}というファイルをMeshLabでU3D形式に変換して取り込んだものである。
+グレースケールの3Dモデルであれば同様の手法が可能である。
+
+\includemovie[
+	poster,
+	toolbar, %same as `controls'
+	label=100d.u3d,
+	text=(100d.u3d),
+	3Daac=60.000000, 3Droll=0.000000, 3Dc2c=0.000000 -48.849998 0.000000, 3Droo=48.849998, 3Dcoo=-3.429000 9.254499 -1.360000,
+	3Dlights=CAD,
+]{\linewidth}{\linewidth}{100d.u3d}
+
+\end{document}

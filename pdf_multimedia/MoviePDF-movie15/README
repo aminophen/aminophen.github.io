@@ -1,0 +1,14 @@
+The PDF file with a movie ("movie15_demo_js.pdf") was generated
+using LaTeX.
+
+******************************
+Information for Typesetting
+
+Requirements:
+- TeX Live or W32TeX
+
+1. You have to prepare some kinds of movie file (suppose "movie1501.mp4")
+2. And typeset:
+ platex movie15_demo_js.tex (at least 3 times)
+ dvipdfmx movie15_demo_js.dvi
+******************************

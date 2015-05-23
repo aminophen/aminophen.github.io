@@ -1,0 +1,19 @@
+The PDF file with an interactive 3D model ("3d-daz_js.pdf") was generated
+using LaTeX.
+
+******************************
+Information for Typesetting
+
+Requirements:
+- TeX Live or W32TeX
+- Jmol
+- DAZ Studio
+
+1. You have to get "100d.pdb" from Protein Data Bank:
+  http://www.rcsb.org/pdb/explore/explore.do?structureId=100d
+2. Export "100d-spacefill.obj" and "100d-spacefill.mtl" using Jmol.
+3. Convert to "100d-spacefill.u3d" using DAZ Studio.
+4. And typeset:
+ platex 3d-daz_js.tex (at least 3 times)
+ dvipdfmx 3d-daz_js.dvi
+******************************

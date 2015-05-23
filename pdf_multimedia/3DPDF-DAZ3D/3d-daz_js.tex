@@ -1,0 +1,32 @@
+% platex -> dvipdfmx で可能
+
+\documentclass{jsarticle}
+\let\ifdraft\relax % 後で movie15 パッケージが ifdraft.sty が読み込むことへの対策
+\usepackage[dvipdfmx]{hyperref}
+\usepackage[dvipdfmx,3D]{movie15_dvipdfmx}
+\title{動く3D分子模型（JmolとDAZ Studio使用）}
+\author{Acetaminophen}
+\begin{document}
+\maketitle
+
+これは\texttt{100d.pdb}というファイルをJmolでOBJ形式に変換し、さらにDAZ StudioでU3D形式に変換して取り込んだものである。
+
+\begin{center}
+    \includemovie[
+        poster,
+        toolbar,
+        label=100d,
+        width=0.9\textwidth,
+        height=0.9\textheight,
+        3Droo=152.86543,
+        3Dcoo= 0.0 0.0 0.0,
+        3Dc2c=0.0 0.0 1.0,
+        3Daac=16.260204,
+        3Droll=0.0,
+        3Dbg=1 1 1,
+        3Dlights=Headlamp,
+        3Drender=Solid,
+    ]{\linewidth}{\linewidth}{100d-spacefill.u3d}
+\end{center}
+
+\end{document}

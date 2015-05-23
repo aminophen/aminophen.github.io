@@ -1,0 +1,20 @@
+The PDF file with an interactive 3D model ("3d-meshlab_js.pdf") was generated
+using LaTeX.
+
+******************************
+Information for Typesetting
+
+Requirements:
+- TeX Live or W32TeX
+- MeshLab
+
+1. You have to get "100d.pdb" from Protein Data Bank:
+  http://www.rcsb.org/pdb/explore/explore.do?structureId=100d
+2. Export "100d.u3d" (and "100d.tex") using MeshLab.
+   ("100d.tex" can be typeset using pdflatex directly to generate
+    "100d.pdf".)
+3. Convert to "100d.u3d" using Universal 3D Sample Software.
+4. And typeset:
+ platex 3d-meshlab_js.tex (at least 3 times)
+ dvipdfmx 3d-meshlab_js.dvi
+******************************

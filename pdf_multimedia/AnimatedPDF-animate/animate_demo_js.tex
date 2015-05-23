@@ -1,0 +1,22 @@
+% platex + dvipdfmx で最低2回コンパイルが必要
+\documentclass{jsarticle}
+\let\ifdraft\relax % 後で animate パッケージが ifdraft.sty が読み込むことへの対策
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{animate}
+\西暦
+\title{GIFアニメのanimateパッケージによる取り込み}
+\author{Acetaminophen}
+\begin{document}
+\maketitle
+
+$+x$方向に進行する正弦波； \\ \qquad
+$u(x,t) = 2 \sin \pi (x - 4t)$
+\begin{figure}[ht]
+\centering
+\animategraphics[height=2.8in,autoplay,controls,loop]{12}{wave_}{000}{015}
+\end{figure}
+
+図では、数式で表される波形を見やすいように軸方向に拡大・縮小して表示しています。
+また、時間スケールも調節しています。
+
+\end{document}

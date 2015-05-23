@@ -1,0 +1,17 @@
+The PDF file with an interactive 3D model ("3d-asymptote.pdf") was generated
+using LaTeX.
+
+******************************
+Information for Typesetting
+
+Requirements:
+- TeX Live or W32TeX
+- Asymptote (already installed for TeX Live users)
+
+1. You have to get "100d.pdb1" from Protein Data Bank:
+  http://www.rcsb.org/pdb/explore/explore.do?structureId=100d
+2. And typeset: (Note that "cpkcolors.asy" can be recognized through asy)
+ pdflatex 3d-asymptote.tex
+ asy 3d-asymptote-1.asy
+ pdflatex 3d-asymptote.tex
+******************************

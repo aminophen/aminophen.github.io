@@ -1,0 +1,15 @@
+% pdflatex
+\documentclass[a4paper]{article}
+\usepackage[3D]{movie15}
+\usepackage{hyperref}
+\usepackage[UKenglish]{babel}
+\begin{document}
+\includemovie[
+	poster,
+	toolbar, %same as `controls'
+	label=100d-color.u3d,
+	text=(100d-color.u3d),
+	3Daac=60.000000, 3Droll=0.000000, 3Dc2c=-3.429000 -58.103996 1.360000, 3Droo=58.220978, 3Dcoo=-3.429000 9.254499 -1.360000,
+	3Dlights=CAD,
+]{\linewidth}{\linewidth}{100d-color.u3d}
+\end{document}

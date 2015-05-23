@@ -1,0 +1,29 @@
+% platex + dvipdfmx で最低3回コンパイルが必要
+\documentclass{jsarticle}
+\let\ifdraft\relax % 後で movie15 パッケージが ifdraft.sty が読み込むことへの対策
+\usepackage[dvipdfmx]{hyperref} % \movieref を使う場合に必要
+\usepackage[dvipdfmx]{movie15_dvipdfmx}
+\西暦
+\title{動画のmovie15\_dvipdfmxによる取り込み}
+\author{Acetaminophen}
+\begin{document}
+\maketitle
+
+元の動画は滋賀大学の熊澤さんがさまざまな\TeX パッケージのサンプルを公開しているサイト
+\url{http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/movie15.html}
+で配布されている「彦根城外堀」の mp4 ファイルである。
+
+\begin{figure}[ht]
+\centering
+\includemovie[label=hikone]{80mm}{60mm}{movie1501.mp4} \\
+\begin{tabular}{|c|c|c|}
+\movieref{hikone}{再生}
+ & \movieref[pause]{hikone}{一時停止/再生}
+ & \movieref[stop]{hikone}{停止}
+\end{tabular}
+\end{figure}
+
+\verb+\includemovie+のオプションで\verb+poster=hoge.png+と指定すれば、
+動画や音声を再生していない時に表示する画像を\verb+hoge.png+に指定できる。
+
+\end{document}
