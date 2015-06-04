@@ -1,5 +1,4 @@
-ヨーロッパの地図をフォントとして出力：CountriesOfEurope
-=======================================================
+## ヨーロッパの地図をフォントとして出力：CountriesOfEurope
 
 詳細はブログ記事参照。
 http://acetaminophen.hatenablog.com/entry/2015/02/13/175245
