@@ -13,14 +13,16 @@ TeX2img 付属ツール「pdfiumdraw」を使って、PDF から EMF を出力�
 テキスト保持 PDF から pdfiumdraw で変換（EMF/PNG を出力；PNG は比較のため）：
 - pdfiumdraw-crop-emf.emf（これを見やすいように PNG 化したのが pdfiumdraw-crop-emf.png）
 - pdfiumdraw-crop-png.png
+- pdfiumdraw-crop-usegdi-png.png（--use-gdi オプションを追加）
 
 アウトライン化した PDF から pdfiumdraw で変換（EMF/PNG を出力；比較のため）：
 - pdfiumdraw-outlined-emf.emf（これを見やすいように PNG 化したのが pdfiumdraw-outlined-emf.png）
 - pdfiumdraw-outlined-png.png
+- pdfiumdraw-outlined-usegdi-png.png（--use-gdi オプションを追加）
 
 見比べると、EMF 出力の際に限ってわかること：
 - すべての破線が消滅している
-- さらに、アウトライン化 PDF からの変換では一部の文字が抜け落ちている
+- さらに、アウトライン化 PDF からの変換では一部の文字が抜け落ちている（逆に PNG 出力ならテキスト保持 PDF からの変換ですべての文字が消滅する）
 
 ### （参考）Inkscape による EMF 出力
 
