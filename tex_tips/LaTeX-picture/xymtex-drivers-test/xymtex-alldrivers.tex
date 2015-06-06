@@ -1,0 +1,35 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage{bxeepic}
+\usepackage{xymtex}
+\title{\XyMTeX のサンプル (\textsf{xymtex.sty} + \textsf{bxeepic.sty})}
+\author{アセトアミノフェン}
+\begin{document}
+\maketitle
+
+\begin{figure}[htb]
+\centering
+
+\begin{picture}(2750,900)\put(1100,100){%
+\fourhetero[{b\sixfusev[c]{1==S;5==\null;%
+3s==\pentamethylenei{3==O}{1==(yl);4D==O}}{4==COOH;6GA==H}{e}}%
+]{2==N}{1D==O;4Sd==H;4Su==\heptamethylenei{7==\downnobond{N}{H}}%
+{7==(yl);1W==HO;1D==O;2B==NH$_{2}$;6D==O}}%
+}\end{picture}
+
+\begin{picture}(1550,1550)\put(360,0){%
+\nonaheterovi[e]{6==O}{1B==CH$_{3}$;2B==OH;4==COOCH$_{3}$;%
+7B==\lyl(8==O){3==\sixheterov{2==O}{3==(yl);1B==CH$_{2}$OH;3GA==H;%
+4A==\lmoiety{HO};5B==HO;6A==HO}};8B==H;9B==H}%
+}\end{picture}
+
+\begin{picture}(2000,1800)\put(280,1000){%
+\sixheterov[fb{b\sixfusev[ac{b\sixfusev[ac{c\sixfusev[bd{c%
+\sixfusev[bd{d\sixfusev[ce{d\sixfusev[ce{e\sixfusev[df{e%
+\sixfusev[df{f\sixfusev[ae{f\sixfusev[ae{a\sixfusev[fb]{}{}{D}}]{}{}{C}}]{}{}{C}}]{}{}{B}%
+}]{}{}{B}}]{}{}{A}}]{}{}{A}}]{}{}{F}}]{}{}{F}}]{}{}{E}}]{}{}{E}}]{}{}[D]%
+}\end{picture}
+
+\caption{セファロスポリン C・ロガニン・ケクレン}
+\end{figure}
+
+\end{document}
