@@ -63,6 +63,27 @@ Illustrator-01.pdf から QPDF で ﾅﾝﾄｶBox を好き勝手にいじっ�
     /ArtBox    [201 201 1201 1201]
 ~~~~
 
+- Illustrator-03.pdf：
+Illustrator-02.pdf から /ArtBox だけ削除。
+~~~~
+    /MediaBox  [100 100 1100 1100]
+    /BleedBox  [302 302 1302 1302]
+    /TrimBox   [504 504 1504 1504]
+~~~~
+
+- Illustrator-04.pdf：
+Illustrator-03.pdf から /TrimBox だけ削除。
+~~~~
+    /MediaBox  [100 100 1100 1100]
+    /BleedBox  [302 302 1302 1302]
+~~~~
+
+- Illustrator-05.pdf：
+Illustrator-04.pdf から /BleedBox だけ削除。
+~~~~
+    /MediaBox  [100 100 1100 1100]
+~~~~
+
 - Preview-01.pdf：
 Preview.pdf を qpdf --qdf と fix-qdf で圧縮解除しただけ（したがって全く等価）
 ~~~~
