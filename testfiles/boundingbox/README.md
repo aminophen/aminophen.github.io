@@ -4,7 +4,7 @@ BoundingBox について正しく理解するために、いくつかのテス�
 
 ### サブブログ「BoundingBox がとにかくややこしい話」で作成した PDF
 
-当該記事 [(1)][http://d.hatena.ne.jp/acetaminophen/20150716/1437021212], [(2)][http://d.hatena.ne.jp/acetaminophen/20150717/1437112430] を参照。
+当該記事 [(1)](http://d.hatena.ne.jp/acetaminophen/20150716/1437021212), [(2)](http://d.hatena.ne.jp/acetaminophen/20150717/1437112430) を参照。
 なお、いずれも MediaBox をほかの ﾅﾝﾄｶBox がはみ出す不正がある。
 ちなみに、test-1.pdf は後で取り上げる Preview-02.pdf と同一である。
 
@@ -36,7 +36,7 @@ Illustrator で保存した直後。
 裁ち落としを0にして保存したため /MediaBox と /BleedBox と /TrimBox は一致した状態で明示されている。
 /ArtBox が描画部分だけを囲んでいて、/CropBox は明示なし。
 
-- Preview.pdf
+- Preview.pdf：
 Illustrator.pdf を Preview.app でクロップしたもの。
 /CropBox が指定部分だけを囲むように追加で明示され、ほかの Box は元のものを維持している。
 
