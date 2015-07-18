@@ -8,7 +8,7 @@ TeX2img 付属ツール「pdfiumdraw」を使って、PDF から EMF を出力�
 
 ### pdfiumdraw による EMF 出力と PNG 出力の比較
 
-現行の TeX2img の EMF 出力スキームは「gs による PDF のアウトライン化→pdfiumdraw」を通っている。
+現行の TeX2img 1.5.3 の EMF 出力スキームは「gs による PDF のアウトライン化→pdfiumdraw」を通っている。
 
 (1) テキスト保持 PDF から pdfiumdraw で変換（EMF/PNG を出力；PNG は比較のため）：
 - pdfiumdraw-crop-emf.emf（これを見やすいように PNG 化したのが pdfiumdraw-crop-emf.png）
@@ -34,7 +34,7 @@ TeX2img 付属ツール「pdfiumdraw」を使って、PDF から EMF を出力�
 - テキスト保持 PDF からの変換は、Inkscape ではフォントが変わってしまう（Computer Modern がシステムにないため）
 - アウトライン化 PDF からの変換では、Inkscape でも破線が描画されない
 
-### （追加：2015-05-08）Inkscape でパスを変形してから pdfiumdraw で変換
+### （追加：2015-06-08）Inkscape でパスを変形してから pdfiumdraw で変換
 
 先ほどのアウトライン化 PDF「xymtexpdf-input-outlined.pdf」をいったん Inkscape で開き、手動で破線部分のパスを変形してみた。
 + Inkscape で開いたら「グループ解除」
