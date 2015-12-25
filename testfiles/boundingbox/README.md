@@ -2,6 +2,8 @@
 
 BoundingBox について正しく理解するために、いくつかのテスト用 PDF を作成した。
 
+（注意：この項目は整理中）
+
 ### サブブログ「BoundingBox がとにかくややこしい話」で作成した PDF
 
 当該記事 [(1)](http://d.hatena.ne.jp/acetaminophen/20150716/1437021212), [(2)](http://d.hatena.ne.jp/acetaminophen/20150717/1437112430) を参照。
